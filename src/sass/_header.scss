@@ -1,7 +1,4 @@
 
-
-
-
 .splash{
   height: 100vh;
   max-width: 100%;
@@ -11,6 +8,7 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
 .splash::before{
   position: absolute;
   content: '';
@@ -35,12 +33,14 @@
 
 .nav-bar-left{
   font-weight: 600;
+
   h1{
-    letter-spacing: 10px;;
+    letter-spacing: 10px;
     font-size: 48px;
   }
+
   h2{
-    letter-spacing: 8px;;
+    letter-spacing: 8px;
     font-size: 20px;;
   }
 }
@@ -48,6 +48,7 @@
 .nav-bar-right{
   text-align: end;
   font-size: 25px;
+
   a{
     text-decoration: none;
     padding-right: 40px;
@@ -67,13 +68,16 @@
   font-weight: 400;
   color: $color-main;
   z-index: 1;
+
   *{
     line-height: 0.9;
     letter-spacing: 22px;
   }
+
   .title-1{
     width: 100%;
   }
+
   .title-2{
     width: 100%;
     text-align: end;
@@ -97,10 +101,12 @@
   position: relative;
   z-index: 1;
   text-align: center;
+
   h2{
     font-size: 40px;
     letter-spacing: 10px;
   }
+
   i{
     font-size: 60px;
   }

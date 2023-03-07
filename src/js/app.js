@@ -6,8 +6,8 @@ const app = {
     const thisApp = this;
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
-    thisApp.activatePage(idFromHash);
     const idFromHash = window.location.hash.replace('#/', '');
+    thisApp.activatePage(idFromHash);
     // eslint-disable-next-line no-unused-vars
     let pageMatchingHash = thisApp.pages[0].id;
 
