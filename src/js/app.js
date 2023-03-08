@@ -40,11 +40,6 @@ const app = {
     }
   },
 
-  initHome: function () {
-    const homeContainer = document.querySelector(select.containerOf.home);
-    new Home(homeContainer);
-  },
-
   initMenu: function () {
     const thisApp = this;
     for (let productData in thisApp.data.products) {
@@ -69,7 +64,6 @@ const app = {
   init: function () {
     const thisApp = this;
     thisApp.initData();
-    thisApp.initHome();
     thisApp.initPages();
   },
 };

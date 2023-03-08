@@ -32,5 +32,5 @@ export const settings = {
 };
 export const templates = {
   menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
-  homeWidget: Handlebars.compile(document.querySelector(select.templateOf.homeWidget).innerHTML),
+  homePage: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
 };

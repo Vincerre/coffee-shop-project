@@ -1,10 +1,15 @@
+.product-list {
+  max-width: 1500px;
+}
+
 .product__title {
   display: flex;
   position: relative;
   height: 300px;
   justify-content: center;
   align-items: center;
-  margin: 30px 0 60px 0;
+  margin: 30px 0 30px 0;
+  text-transform: uppercase;
   h1{
     font-weight: 700;
     letter-spacing: 15px;
@@ -78,4 +83,61 @@
 .product__image {
   transform: scale(1.3);
   box-shadow: 0px 0px 32px 3px rgba(66, 68, 90, 1);
+}
+
+.about__us{
+  position: relative;
+  background-image: url(../images/about-us.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-position-y: 5%;
+  height: 85vh;
+}
+
+.about__us::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 0;
+}
+
+.about__us__wrapper{
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__us__description{
+  position: relative;
+  font-style: italic;
+  font-size: 50px;
+  color: $color-light;
+  z-index: 1;
+  height: 30%;
+  max-width: 90%;
+  padding-right: 250px;
+  line-height: 1.2;
+  font-weight: 500;
+  p{
+    margin: 30px 0 50px 0;
+  }
+}
+
+.joinus{
+  font-style: italic;
+  width: 1200px;
+  font-size: 50px;
+  color: $color-light;
+  z-index: 1;
+  height: 30%;
+  text-align: end;
 }
